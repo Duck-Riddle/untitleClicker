@@ -1,10 +1,11 @@
 import { delay, fork, put, race, select, take } from "redux-saga/effects";
 
 import { selectCombo as comboState } from "../../redux/selectors";
-import { decrement as comboDecrement, toggleOverflow } from "./comboSlice"
 import { 
     buttonPress,
-    buttonRelease } from "../../redux/actions"
+    buttonRelease,
+    comboDecrement,
+    toggleOverflow } from "../../redux/actions"
 
 function* handleComboDecrement() {
     while ( true ) {
@@ -44,7 +45,7 @@ function* handleComboOverflow() {
 
         const combo = yield select(comboState)
 
-        if (combo.value < combo.max) { } else {
+        if (combo.value < combo.ceiling) { } else {
             // remember to make it not statick valiue
             yield _toggleOverflow(5000)
         }

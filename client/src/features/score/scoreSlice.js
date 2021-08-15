@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { buttonPress } from "../../redux/actions";
+import { press as buttonPress } from "../button/buttonSlice";
 
 const name = 'score';
 const initialState = {
