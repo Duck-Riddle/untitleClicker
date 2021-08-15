@@ -10,7 +10,7 @@ made with a thought of self-lerning about React & Redux also to try implement so
 - [ ] buying/selling items from store
 - [ ] components, plugins, generators, upgrades && more...
 - [ ] make server side back-end
-- [ ] saving/loading state of game. (*save will be sotred at __user side__ but in encrypted string*)
+- [ ] saving/loading state of game. (*save will be stored at __user side__ but in encrypted string*)
 - [ ] more?
 
 ### Powered by: React & Redux !
