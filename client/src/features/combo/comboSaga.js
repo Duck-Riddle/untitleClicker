@@ -45,7 +45,7 @@ function* handleComboOverflow() {
 
         const combo = yield select(comboState)
 
-        if (combo.value < combo.ceiling) { } else {
+        if (combo.value < combo.max) { } else {
             // remember to make it not statick valiue
             yield _toggleOverflow(5000)
         }

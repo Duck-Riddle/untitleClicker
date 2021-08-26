@@ -1,0 +1,23 @@
+[
+    {
+        "type": "Generator",
+        "name": "autoPusher",
+        "visible": true,
+        "cost": 15,
+        "baseIncome": 1
+    },
+    {
+        "type": "Cog",
+        "name": "betterPusher",
+        "visible": true,
+        "cost": 100,
+        "effects": [
+            {
+                "flat":0,
+                "factor":2,
+                "hooks": [ "Generator/autoPusher" ],
+                "active": false
+            }
+        ]
+    }
+]

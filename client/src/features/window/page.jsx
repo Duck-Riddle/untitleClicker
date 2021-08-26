@@ -7,10 +7,14 @@ function onVisibilityChange(isVisible, dispatch, id=undefined) {
     isVisible ? dispatch(visible({id})) : dispatch(notVisible({id}))
 }
 
-export default function Page({alias}) {
+export default function Page({alias, children}) {
     const dispatch = useDispatch()
     return (
+        <>
         <PageVisible onChange={ isVisible => 
             onVisibilityChange(isVisible, dispatch, alias) }/>
+        {children}
+        </>
+
     )
 }

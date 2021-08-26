@@ -10,10 +10,13 @@ made with a thought of self-lerning about React & Redux also to try implement so
     - [x] js logick (redux); - ~itemShop~
     - [ ] react component
 - [ ] buying/selling items from store
+    - [x] bying items 
 - [ ] components, plugins, generators, upgrades && more...
+    - [x] generators
+    - [x] upgrades / Cogs
 - [ ] make server side back-end
 - [ ] saving/loading state of game. (*save will be stored at __user side__ but in encrypted string*)
 - [ ] more?
 
-###### version: 0.1.2
+###### version: 0.1.3
 ### Powered by: React & Redux !
